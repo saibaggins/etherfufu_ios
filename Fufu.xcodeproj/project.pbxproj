@@ -1,0 +1,637 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF05A1821E4C4E3C004877B4 /* FufuInput.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF05A1811E4C4E3C004877B4 /* FufuInput.plist */; };
+		FF05A1861E4C7161004877B4 /* InputCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF05A1841E4C7161004877B4 /* InputCell.m */; };
+		FF05A1871E4C7161004877B4 /* InputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF05A1851E4C7161004877B4 /* InputCell.xib */; };
+		FF05A18B1E51922C004877B4 /* left-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = FF05A1891E51922C004877B4 /* left-arrow.png */; };
+		FF05A18C1E51922C004877B4 /* right-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = FF05A18A1E51922C004877B4 /* right-arrow.png */; };
+		FF05A1A41E531418004877B4 /* AbstractActionSheetPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = FF05A1911E531418004877B4 /* AbstractActionSheetPicker.m */; };
+		FF05A1A51E531418004877B4 /* ActionSheetCustomPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = FF05A1931E531418004877B4 /* ActionSheetCustomPicker.m */; };
+		FF05A1A61E531418004877B4 /* ActionSheetDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = FF05A1961E531418004877B4 /* ActionSheetDatePicker.m */; };
+		FF05A1A71E531418004877B4 /* ActionSheetDistancePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = FF05A1981E531418004877B4 /* ActionSheetDistancePicker.m */; };
+		FF05A1A81E531418004877B4 /* ActionSheetLocalePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = FF05A19A1E531418004877B4 /* ActionSheetLocalePicker.m */; };
+		FF05A1A91E531418004877B4 /* ActionSheetMultipleStringPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = FF05A19C1E531418004877B4 /* ActionSheetMultipleStringPicker.m */; };
+		FF05A1AA1E531418004877B4 /* ActionSheetStringPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = FF05A19F1E531418004877B4 /* ActionSheetStringPicker.m */; };
+		FF05A1AB1E531418004877B4 /* DistancePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF05A1A11E531418004877B4 /* DistancePickerView.m */; };
+		FF05A1AC1E531418004877B4 /* SWActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = FF05A1A31E531418004877B4 /* SWActionSheet.m */; };
+		FF05A1B01E545B3F004877B4 /* SpeechTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF05A1AE1E545B3F004877B4 /* SpeechTypeViewController.m */; };
+		FF05A1B11E545B3F004877B4 /* SpeechTypeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF05A1AF1E545B3F004877B4 /* SpeechTypeViewController.xib */; };
+		FF05A1B41E558B86004877B4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF05A1B31E558B86004877B4 /* AVFoundation.framework */; };
+		FF1C7B761E431A8900A86C4E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1C7B751E431A8900A86C4E /* main.m */; };
+		FF1C7B791E431A8900A86C4E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1C7B781E431A8900A86C4E /* AppDelegate.m */; };
+		FF1C7B811E431A8900A86C4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF1C7B801E431A8900A86C4E /* Assets.xcassets */; };
+		FF1C7B8F1E431A8A00A86C4E /* FufuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1C7B8E1E431A8A00A86C4E /* FufuTests.m */; };
+		FF1C7B9A1E431A8A00A86C4E /* FufuUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1C7B991E431A8A00A86C4E /* FufuUITests.m */; };
+		FF1C7BAA1E43200D00A86C4E /* InputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1C7BA81E43200D00A86C4E /* InputViewController.m */; };
+		FF1C7BAB1E43200D00A86C4E /* InputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1C7BA91E43200D00A86C4E /* InputViewController.xib */; };
+		FF1C7BB21E4B1ACA00A86C4E /* FufuNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1C7BB11E4B1ACA00A86C4E /* FufuNavigationController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF1C7B8B1E431A8A00A86C4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF1C7B691E431A8900A86C4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF1C7B701E431A8900A86C4E;
+			remoteInfo = Fufu;
+		};
+		FF1C7B961E431A8A00A86C4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF1C7B691E431A8900A86C4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF1C7B701E431A8900A86C4E;
+			remoteInfo = Fufu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF05A1811E4C4E3C004877B4 /* FufuInput.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FufuInput.plist; sourceTree = "<group>"; };
+		FF05A1831E4C7161004877B4 /* InputCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputCell.h; sourceTree = "<group>"; };
+		FF05A1841E4C7161004877B4 /* InputCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputCell.m; sourceTree = "<group>"; };
+		FF05A1851E4C7161004877B4 /* InputCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputCell.xib; sourceTree = "<group>"; };
+		FF05A1891E51922C004877B4 /* left-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "left-arrow.png"; path = "Assets/left-arrow.png"; sourceTree = "<group>"; };
+		FF05A18A1E51922C004877B4 /* right-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "right-arrow.png"; path = "Assets/right-arrow.png"; sourceTree = "<group>"; };
+		FF05A1901E531418004877B4 /* AbstractActionSheetPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AbstractActionSheetPicker.h; path = Pickers/AbstractActionSheetPicker.h; sourceTree = "<group>"; };
+		FF05A1911E531418004877B4 /* AbstractActionSheetPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AbstractActionSheetPicker.m; path = Pickers/AbstractActionSheetPicker.m; sourceTree = "<group>"; };
+		FF05A1921E531418004877B4 /* ActionSheetCustomPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionSheetCustomPicker.h; path = Pickers/ActionSheetCustomPicker.h; sourceTree = "<group>"; };
+		FF05A1931E531418004877B4 /* ActionSheetCustomPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActionSheetCustomPicker.m; path = Pickers/ActionSheetCustomPicker.m; sourceTree = "<group>"; };
+		FF05A1941E531418004877B4 /* ActionSheetCustomPickerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionSheetCustomPickerDelegate.h; path = Pickers/ActionSheetCustomPickerDelegate.h; sourceTree = "<group>"; };
+		FF05A1951E531418004877B4 /* ActionSheetDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionSheetDatePicker.h; path = Pickers/ActionSheetDatePicker.h; sourceTree = "<group>"; };
+		FF05A1961E531418004877B4 /* ActionSheetDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActionSheetDatePicker.m; path = Pickers/ActionSheetDatePicker.m; sourceTree = "<group>"; };
+		FF05A1971E531418004877B4 /* ActionSheetDistancePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionSheetDistancePicker.h; path = Pickers/ActionSheetDistancePicker.h; sourceTree = "<group>"; };
+		FF05A1981E531418004877B4 /* ActionSheetDistancePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActionSheetDistancePicker.m; path = Pickers/ActionSheetDistancePicker.m; sourceTree = "<group>"; };
+		FF05A1991E531418004877B4 /* ActionSheetLocalePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionSheetLocalePicker.h; path = Pickers/ActionSheetLocalePicker.h; sourceTree = "<group>"; };
+		FF05A19A1E531418004877B4 /* ActionSheetLocalePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActionSheetLocalePicker.m; path = Pickers/ActionSheetLocalePicker.m; sourceTree = "<group>"; };
+		FF05A19B1E531418004877B4 /* ActionSheetMultipleStringPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionSheetMultipleStringPicker.h; path = Pickers/ActionSheetMultipleStringPicker.h; sourceTree = "<group>"; };
+		FF05A19C1E531418004877B4 /* ActionSheetMultipleStringPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActionSheetMultipleStringPicker.m; path = Pickers/ActionSheetMultipleStringPicker.m; sourceTree = "<group>"; };
+		FF05A19D1E531418004877B4 /* ActionSheetPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionSheetPicker.h; path = Pickers/ActionSheetPicker.h; sourceTree = "<group>"; };
+		FF05A19E1E531418004877B4 /* ActionSheetStringPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionSheetStringPicker.h; path = Pickers/ActionSheetStringPicker.h; sourceTree = "<group>"; };
+		FF05A19F1E531418004877B4 /* ActionSheetStringPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActionSheetStringPicker.m; path = Pickers/ActionSheetStringPicker.m; sourceTree = "<group>"; };
+		FF05A1A01E531418004877B4 /* DistancePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DistancePickerView.h; path = Pickers/DistancePickerView.h; sourceTree = "<group>"; };
+		FF05A1A11E531418004877B4 /* DistancePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DistancePickerView.m; path = Pickers/DistancePickerView.m; sourceTree = "<group>"; };
+		FF05A1A21E531418004877B4 /* SWActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWActionSheet.h; path = Pickers/SWActionSheet.h; sourceTree = "<group>"; };
+		FF05A1A31E531418004877B4 /* SWActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWActionSheet.m; path = Pickers/SWActionSheet.m; sourceTree = "<group>"; };
+		FF05A1AD1E545B3F004877B4 /* SpeechTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeechTypeViewController.h; sourceTree = "<group>"; };
+		FF05A1AE1E545B3F004877B4 /* SpeechTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeechTypeViewController.m; sourceTree = "<group>"; };
+		FF05A1AF1E545B3F004877B4 /* SpeechTypeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpeechTypeViewController.xib; sourceTree = "<group>"; };
+		FF05A1B31E558B86004877B4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		FF1C7B711E431A8900A86C4E /* Fufu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fufu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF1C7B751E431A8900A86C4E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FF1C7B771E431A8900A86C4E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FF1C7B781E431A8900A86C4E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FF1C7B801E431A8900A86C4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF1C7B851E431A8900A86C4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF1C7B8A1E431A8A00A86C4E /* FufuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FufuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF1C7B8E1E431A8A00A86C4E /* FufuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FufuTests.m; sourceTree = "<group>"; };
+		FF1C7B901E431A8A00A86C4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF1C7B951E431A8A00A86C4E /* FufuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FufuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF1C7B991E431A8A00A86C4E /* FufuUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FufuUITests.m; sourceTree = "<group>"; };
+		FF1C7B9B1E431A8A00A86C4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF1C7BA71E43200D00A86C4E /* InputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputViewController.h; sourceTree = "<group>"; };
+		FF1C7BA81E43200D00A86C4E /* InputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputViewController.m; sourceTree = "<group>"; };
+		FF1C7BA91E43200D00A86C4E /* InputViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputViewController.xib; sourceTree = "<group>"; };
+		FF1C7BAF1E4B0A3000A86C4E /* FufuAppConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FufuAppConstants.h; sourceTree = "<group>"; };
+		FF1C7BB01E4B1ACA00A86C4E /* FufuNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FufuNavigationController.h; path = Classes/NavigationController/FufuNavigationController.h; sourceTree = "<group>"; };
+		FF1C7BB11E4B1ACA00A86C4E /* FufuNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FufuNavigationController.m; path = Classes/NavigationController/FufuNavigationController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF1C7B6E1E431A8900A86C4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF05A1B41E558B86004877B4 /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF1C7B871E431A8A00A86C4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF1C7B921E431A8A00A86C4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF05A1881E5191F0004877B4 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				FF05A1891E51922C004877B4 /* left-arrow.png */,
+				FF05A18A1E51922C004877B4 /* right-arrow.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		FF05A18F1E5313FA004877B4 /* Pickers */ = {
+			isa = PBXGroup;
+			children = (
+				FF05A1901E531418004877B4 /* AbstractActionSheetPicker.h */,
+				FF05A1911E531418004877B4 /* AbstractActionSheetPicker.m */,
+				FF05A1921E531418004877B4 /* ActionSheetCustomPicker.h */,
+				FF05A1931E531418004877B4 /* ActionSheetCustomPicker.m */,
+				FF05A1941E531418004877B4 /* ActionSheetCustomPickerDelegate.h */,
+				FF05A1951E531418004877B4 /* ActionSheetDatePicker.h */,
+				FF05A1961E531418004877B4 /* ActionSheetDatePicker.m */,
+				FF05A1971E531418004877B4 /* ActionSheetDistancePicker.h */,
+				FF05A1981E531418004877B4 /* ActionSheetDistancePicker.m */,
+				FF05A1991E531418004877B4 /* ActionSheetLocalePicker.h */,
+				FF05A19A1E531418004877B4 /* ActionSheetLocalePicker.m */,
+				FF05A19B1E531418004877B4 /* ActionSheetMultipleStringPicker.h */,
+				FF05A19C1E531418004877B4 /* ActionSheetMultipleStringPicker.m */,
+				FF05A19D1E531418004877B4 /* ActionSheetPicker.h */,
+				FF05A19E1E531418004877B4 /* ActionSheetStringPicker.h */,
+				FF05A19F1E531418004877B4 /* ActionSheetStringPicker.m */,
+				FF05A1A01E531418004877B4 /* DistancePickerView.h */,
+				FF05A1A11E531418004877B4 /* DistancePickerView.m */,
+				FF05A1A21E531418004877B4 /* SWActionSheet.h */,
+				FF05A1A31E531418004877B4 /* SWActionSheet.m */,
+			);
+			name = Pickers;
+			sourceTree = "<group>";
+		};
+		FF05A1B21E558B57004877B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF05A1B31E558B86004877B4 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF1C7B681E431A8900A86C4E = {
+			isa = PBXGroup;
+			children = (
+				FF05A1B21E558B57004877B4 /* Frameworks */,
+				FF1C7B731E431A8900A86C4E /* Fufu */,
+				FF1C7B8D1E431A8A00A86C4E /* FufuTests */,
+				FF1C7B981E431A8A00A86C4E /* FufuUITests */,
+				FF1C7B721E431A8900A86C4E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF1C7B721E431A8900A86C4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF1C7B711E431A8900A86C4E /* Fufu.app */,
+				FF1C7B8A1E431A8A00A86C4E /* FufuTests.xctest */,
+				FF1C7B951E431A8A00A86C4E /* FufuUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF1C7B731E431A8900A86C4E /* Fufu */ = {
+			isa = PBXGroup;
+			children = (
+				FF05A18F1E5313FA004877B4 /* Pickers */,
+				FF05A1881E5191F0004877B4 /* Assets */,
+				FF1C7BB01E4B1ACA00A86C4E /* FufuNavigationController.h */,
+				FF1C7BB11E4B1ACA00A86C4E /* FufuNavigationController.m */,
+				FF1C7BAF1E4B0A3000A86C4E /* FufuAppConstants.h */,
+				FF1C7B771E431A8900A86C4E /* AppDelegate.h */,
+				FF1C7B781E431A8900A86C4E /* AppDelegate.m */,
+				FF1C7BA71E43200D00A86C4E /* InputViewController.h */,
+				FF1C7BA81E43200D00A86C4E /* InputViewController.m */,
+				FF1C7BA91E43200D00A86C4E /* InputViewController.xib */,
+				FF05A1831E4C7161004877B4 /* InputCell.h */,
+				FF05A1841E4C7161004877B4 /* InputCell.m */,
+				FF05A1851E4C7161004877B4 /* InputCell.xib */,
+				FF05A1AD1E545B3F004877B4 /* SpeechTypeViewController.h */,
+				FF05A1AE1E545B3F004877B4 /* SpeechTypeViewController.m */,
+				FF05A1AF1E545B3F004877B4 /* SpeechTypeViewController.xib */,
+				FF1C7B801E431A8900A86C4E /* Assets.xcassets */,
+				FF1C7B851E431A8900A86C4E /* Info.plist */,
+				FF1C7B741E431A8900A86C4E /* Supporting Files */,
+				FF05A1811E4C4E3C004877B4 /* FufuInput.plist */,
+			);
+			path = Fufu;
+			sourceTree = "<group>";
+		};
+		FF1C7B741E431A8900A86C4E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF1C7B751E431A8900A86C4E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FF1C7B8D1E431A8A00A86C4E /* FufuTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF1C7B8E1E431A8A00A86C4E /* FufuTests.m */,
+				FF1C7B901E431A8A00A86C4E /* Info.plist */,
+			);
+			path = FufuTests;
+			sourceTree = "<group>";
+		};
+		FF1C7B981E431A8A00A86C4E /* FufuUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FF1C7B991E431A8A00A86C4E /* FufuUITests.m */,
+				FF1C7B9B1E431A8A00A86C4E /* Info.plist */,
+			);
+			path = FufuUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF1C7B701E431A8900A86C4E /* Fufu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF1C7B9E1E431A8A00A86C4E /* Build configuration list for PBXNativeTarget "Fufu" */;
+			buildPhases = (
+				FF1C7B6D1E431A8900A86C4E /* Sources */,
+				FF1C7B6E1E431A8900A86C4E /* Frameworks */,
+				FF1C7B6F1E431A8900A86C4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fufu;
+			productName = Fufu;
+			productReference = FF1C7B711E431A8900A86C4E /* Fufu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF1C7B891E431A8A00A86C4E /* FufuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF1C7BA11E431A8A00A86C4E /* Build configuration list for PBXNativeTarget "FufuTests" */;
+			buildPhases = (
+				FF1C7B861E431A8A00A86C4E /* Sources */,
+				FF1C7B871E431A8A00A86C4E /* Frameworks */,
+				FF1C7B881E431A8A00A86C4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF1C7B8C1E431A8A00A86C4E /* PBXTargetDependency */,
+			);
+			name = FufuTests;
+			productName = FufuTests;
+			productReference = FF1C7B8A1E431A8A00A86C4E /* FufuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FF1C7B941E431A8A00A86C4E /* FufuUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF1C7BA41E431A8A00A86C4E /* Build configuration list for PBXNativeTarget "FufuUITests" */;
+			buildPhases = (
+				FF1C7B911E431A8A00A86C4E /* Sources */,
+				FF1C7B921E431A8A00A86C4E /* Frameworks */,
+				FF1C7B931E431A8A00A86C4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF1C7B971E431A8A00A86C4E /* PBXTargetDependency */,
+			);
+			name = FufuUITests;
+			productName = FufuUITests;
+			productReference = FF1C7B951E431A8A00A86C4E /* FufuUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF1C7B691E431A8900A86C4E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				TargetAttributes = {
+					FF1C7B701E431A8900A86C4E = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					FF1C7B891E431A8A00A86C4E = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FF1C7B701E431A8900A86C4E;
+					};
+					FF1C7B941E431A8A00A86C4E = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FF1C7B701E431A8900A86C4E;
+					};
+				};
+			};
+			buildConfigurationList = FF1C7B6C1E431A8900A86C4E /* Build configuration list for PBXProject "Fufu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF1C7B681E431A8900A86C4E;
+			productRefGroup = FF1C7B721E431A8900A86C4E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF1C7B701E431A8900A86C4E /* Fufu */,
+				FF1C7B891E431A8A00A86C4E /* FufuTests */,
+				FF1C7B941E431A8A00A86C4E /* FufuUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF1C7B6F1E431A8900A86C4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF1C7B811E431A8900A86C4E /* Assets.xcassets in Resources */,
+				FF05A1B11E545B3F004877B4 /* SpeechTypeViewController.xib in Resources */,
+				FF1C7BAB1E43200D00A86C4E /* InputViewController.xib in Resources */,
+				FF05A18C1E51922C004877B4 /* right-arrow.png in Resources */,
+				FF05A1871E4C7161004877B4 /* InputCell.xib in Resources */,
+				FF05A1821E4C4E3C004877B4 /* FufuInput.plist in Resources */,
+				FF05A18B1E51922C004877B4 /* left-arrow.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF1C7B881E431A8A00A86C4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF1C7B931E431A8A00A86C4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF1C7B6D1E431A8900A86C4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF05A1AA1E531418004877B4 /* ActionSheetStringPicker.m in Sources */,
+				FF05A1A71E531418004877B4 /* ActionSheetDistancePicker.m in Sources */,
+				FF05A1A81E531418004877B4 /* ActionSheetLocalePicker.m in Sources */,
+				FF1C7B791E431A8900A86C4E /* AppDelegate.m in Sources */,
+				FF05A1AB1E531418004877B4 /* DistancePickerView.m in Sources */,
+				FF1C7B761E431A8900A86C4E /* main.m in Sources */,
+				FF05A1861E4C7161004877B4 /* InputCell.m in Sources */,
+				FF05A1AC1E531418004877B4 /* SWActionSheet.m in Sources */,
+				FF05A1A91E531418004877B4 /* ActionSheetMultipleStringPicker.m in Sources */,
+				FF05A1A41E531418004877B4 /* AbstractActionSheetPicker.m in Sources */,
+				FF1C7BAA1E43200D00A86C4E /* InputViewController.m in Sources */,
+				FF05A1B01E545B3F004877B4 /* SpeechTypeViewController.m in Sources */,
+				FF05A1A61E531418004877B4 /* ActionSheetDatePicker.m in Sources */,
+				FF1C7BB21E4B1ACA00A86C4E /* FufuNavigationController.m in Sources */,
+				FF05A1A51E531418004877B4 /* ActionSheetCustomPicker.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF1C7B861E431A8A00A86C4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF1C7B8F1E431A8A00A86C4E /* FufuTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF1C7B911E431A8A00A86C4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF1C7B9A1E431A8A00A86C4E /* FufuUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF1C7B8C1E431A8A00A86C4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF1C7B701E431A8900A86C4E /* Fufu */;
+			targetProxy = FF1C7B8B1E431A8A00A86C4E /* PBXContainerItemProxy */;
+		};
+		FF1C7B971E431A8A00A86C4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF1C7B701E431A8900A86C4E /* Fufu */;
+			targetProxy = FF1C7B961E431A8A00A86C4E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FF1C7B9C1E431A8A00A86C4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF1C7B9D1E431A8A00A86C4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF1C7B9F1E431A8A00A86C4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Fufu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fufu.com.Fufu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FF1C7BA01E431A8A00A86C4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Fufu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fufu.com.Fufu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		FF1C7BA21E431A8A00A86C4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FufuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fufu.com.FufuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fufu.app/Fufu";
+			};
+			name = Debug;
+		};
+		FF1C7BA31E431A8A00A86C4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FufuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fufu.com.FufuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fufu.app/Fufu";
+			};
+			name = Release;
+		};
+		FF1C7BA51E431A8A00A86C4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FufuUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fufu.com.FufuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Fufu;
+			};
+			name = Debug;
+		};
+		FF1C7BA61E431A8A00A86C4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FufuUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fufu.com.FufuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Fufu;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF1C7B6C1E431A8900A86C4E /* Build configuration list for PBXProject "Fufu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF1C7B9C1E431A8A00A86C4E /* Debug */,
+				FF1C7B9D1E431A8A00A86C4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF1C7B9E1E431A8A00A86C4E /* Build configuration list for PBXNativeTarget "Fufu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF1C7B9F1E431A8A00A86C4E /* Debug */,
+				FF1C7BA01E431A8A00A86C4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF1C7BA11E431A8A00A86C4E /* Build configuration list for PBXNativeTarget "FufuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF1C7BA21E431A8A00A86C4E /* Debug */,
+				FF1C7BA31E431A8A00A86C4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF1C7BA41E431A8A00A86C4E /* Build configuration list for PBXNativeTarget "FufuUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF1C7BA51E431A8A00A86C4E /* Debug */,
+				FF1C7BA61E431A8A00A86C4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF1C7B691E431A8900A86C4E /* Project object */;
+}

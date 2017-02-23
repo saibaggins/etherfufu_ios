@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>display_name</key>
+		<string>Gender</string>
+		<key>enum</key>
+		<array>
+			<string>Male</string>
+			<string>Female</string>
+		</array>
+		<key>attribute</key>
+		<string>gender</string>
+		<key>default_value</key>
+		<string>Male</string>
+		<key>required</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>display_name</key>
+		<string>Ambience</string>
+		<key>enum</key>
+		<array>
+			<string>Conference Room</string>
+			<string>Office</string>
+			<string>Car</string>
+			<string>Street</string>
+		</array>
+		<key>attribute</key>
+		<string>ambience</string>
+		<key>default_value</key>
+		<string>Conference Room</string>
+		<key>required</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>display_name</key>
+		<string>Accent</string>
+		<key>enum</key>
+		<array>
+			<string>American</string>
+			<string>Indian</string>
+			<string>Chinese</string>
+			<string>Spanish</string>
+		</array>
+		<key>attribute</key>
+		<string>accent</string>
+		<key>default_value</key>
+		<string>American</string>
+		<key>required</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>display_name</key>
+		<string>Speech Input</string>
+		<key>enum</key>
+		<array>
+			<string>Headphone</string>
+			<string>Phone Mic</string>
+		</array>
+		<key>attribute</key>
+		<string>speech_input</string>
+		<key>default_value</key>
+		<string>Headphone</string>
+		<key>required</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>display_name</key>
+		<string>Distance</string>
+		<key>enum</key>
+		<array>
+			<string>0 ft</string>
+			<string>3 ft</string>
+		</array>
+		<key>attribute</key>
+		<string>distance</string>
+		<key>default_value</key>
+		<string>0 ft</string>
+		<key>required</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>display_name</key>
+		<string>Sampling Rate</string>
+		<key>enum</key>
+		<array>
+			<string>8 kHz</string>
+			<string>16 kHz</string>
+		</array>
+		<key>attribute</key>
+		<string>sampling_rate</string>
+		<key>default_value</key>
+		<string>8 kHz</string>
+		<key>required</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>display_name</key>
+		<string>Speech Type</string>
+		<key>enum</key>
+		<array>
+			<string>Command</string>
+			<string>Sentence</string>
+			<string>Paragraph</string>
+		</array>
+		<key>attribute</key>
+		<string>speech_type</string>
+		<key>default_value</key>
+		<string>Command</string>
+		<key>required</key>
+		<true/>
+	</dict>
+</array>
+</plist>
