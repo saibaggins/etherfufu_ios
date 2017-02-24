@@ -16,6 +16,8 @@
 		<string>Male</string>
 		<key>required</key>
 		<true/>
+		<key>type</key>
+		<string>String</string>
 	</dict>
 	<dict>
 		<key>display_name</key>
@@ -33,6 +35,8 @@
 		<string>Conference Room</string>
 		<key>required</key>
 		<true/>
+		<key>type</key>
+		<string>String</string>
 	</dict>
 	<dict>
 		<key>display_name</key>
@@ -50,6 +54,8 @@
 		<string>American</string>
 		<key>required</key>
 		<true/>
+		<key>type</key>
+		<string>String</string>
 	</dict>
 	<dict>
 		<key>display_name</key>
@@ -65,21 +71,25 @@
 		<string>Headphone</string>
 		<key>required</key>
 		<true/>
+		<key>type</key>
+		<string>String</string>
 	</dict>
 	<dict>
 		<key>display_name</key>
 		<string>Distance</string>
 		<key>enum</key>
 		<array>
-			<string>0 ft</string>
+			<string>1 ft</string>
 			<string>3 ft</string>
 		</array>
 		<key>attribute</key>
 		<string>distance</string>
 		<key>default_value</key>
-		<string>0 ft</string>
+		<string>1 ft</string>
 		<key>required</key>
 		<true/>
+		<key>type</key>
+		<string>Integer</string>
 	</dict>
 	<dict>
 		<key>display_name</key>
@@ -90,11 +100,13 @@
 			<string>16 kHz</string>
 		</array>
 		<key>attribute</key>
-		<string>sampling_rate</string>
+		<string>sample_rate</string>
 		<key>default_value</key>
 		<string>8 kHz</string>
 		<key>required</key>
 		<true/>
+		<key>type</key>
+		<string>Integer</string>
 	</dict>
 	<dict>
 		<key>display_name</key>
@@ -111,6 +123,8 @@
 		<string>Command</string>
 		<key>required</key>
 		<true/>
+		<key>type</key>
+		<string>String</string>
 	</dict>
 </array>
 </plist>

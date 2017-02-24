@@ -190,7 +190,7 @@ NSString *recorderFilePath;
     }
     
     // start recording
-    [recorder recordForDuration:(NSTimeInterval) 10];
+    [recorder recordForDuration:(NSTimeInterval) 1];
 }
 
 - (void) stopRecording

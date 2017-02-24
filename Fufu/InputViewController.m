@@ -50,8 +50,11 @@
     [super viewWillAppear:animated];
     
     /*NSString *requestString = @"http://etherfufu-staging.us-east-1.elasticbeanstalk.com/audiobank/v1/options";
+    NSURL *url = [NSURL URLWithString:requestString];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    [request setHTTPMethod:@"GET"];
     
-    [self placeGetRequest:requestString action:@"GET" withHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+    [self placeRequest:request withHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         NSArray *inputArray;
         
         if (!error) {
@@ -172,7 +175,80 @@
             }
             else
             {
+                NSMutableDictionary *metadata = [[NSMutableDictionary alloc] init];
+                for (NSDictionary *dict in self.inputList) {
+                    if ([[dict valueForKey:@"type"] isEqualToString:@"Integer"]) {
+                        NSString *attributeValue = [dict valueForKey:@"default_value"];
+                        NSArray *listItems = [attributeValue componentsSeparatedByString:@" "];
+                        attributeValue = [listItems objectAtIndex:0];
+                        
+                        [metadata setObject:[NSNumber numberWithInt:[attributeValue intValue]] forKey:[NSString stringWithFormat:@"%@", [dict valueForKey:@"attribute"]]];
+                    } else {
+                        [metadata setObject:[NSString stringWithFormat:@"%@", [dict valueForKey:@"default_value"]] forKey:[NSString stringWithFormat:@"%@", [dict valueForKey:@"attribute"]]];
+                    }
+                }
                 
+                NSError *err = nil;
+                NSData *postData = [NSJSONSerialization dataWithJSONObject:metadata options:0 error:&err];
+                NSString *requestString = @"http://etherfufu-staging.us-east-1.elasticbeanstalk.com/audiobank/v1/metadata";
+                NSURL *url = [NSURL URLWithString:requestString];
+                NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+                [request addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+                [request setHTTPMethod:@"POST"];
+                [request setHTTPBody:postData];
+                
+                [self placeRequest:request withHandler:^(NSData *data, NSURLResponse *response, NSError *error)
+                {
+                    if (!error)
+                    {
+                        NSDictionary *responseData = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+                        NSString *responseID = [responseData valueForKey:@"id"];
+                        
+                        NSString *requestString = [NSString stringWithFormat:@"http://etherfufu-staging.us-east-1.elasticbeanstalk.com/audiobank/v1/metadata/%@/sample", responseID];
+                        NSURL *url = [NSURL URLWithString:requestString];
+                        NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+                        
+                        //--------
+                        
+                        /*NSString *boundary = @"---------------------------14737809831466499882746641449";
+                        NSString *contentType = [NSString stringWithFormat:@"multipart/form-data; boundary=%@",boundary];
+                        [request addValue:contentType forHTTPHeaderField: @"Content-Type"];
+                        
+                        NSMutableData *body = [NSMutableData data];
+                        [body appendData:[[NSString stringWithFormat:@"\r\n--%@\r\n",boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+                        [body appendData:[[NSString stringWithString:[NSString stringWithFormat:@"Content-Disposition: form-data; name=\"userfile\"; filename=\".caf\"\r\n"]] dataUsingEncoding:NSUTF8StringEncoding]];
+                        [body appendData:[@"Content-Type: application/octet-stream\r\n\r\n" dataUsingEncoding:NSUTF8StringEncoding]];
+                        [body appendData:[NSData dataWithData:audioData]];
+                        [body appendData:[[NSString stringWithFormat:@"\r\n--%@--\r\n",boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+                        [request setHTTPBody:body];*/
+                        
+                        //--------
+                        
+                        [self placeRequest:request withHandler:^(NSData *data, NSURLResponse *response, NSError *error)
+                         {
+                             if (error)
+                             {
+                                 UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"" message:@"Recorded audio is not uploaded successfully" preferredStyle:UIAlertControllerStyleAlert];
+                                 UIAlertAction* ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+                                 [alertController addAction:ok];
+                                 [self presentViewController:alertController animated:YES completion:nil];
+                             }
+                             else
+                             {
+                                 NSDictionary *responseData = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+                                 NSLog(@"Response Data: %@", responseData);
+                                 
+                                 
+                                 UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"" message:@"Recorded audio is uploaded successfully" preferredStyle:UIAlertControllerStyleAlert];
+                                 UIAlertAction* ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+                                 [alertController addAction:ok];
+                                 [self presentViewController:alertController animated:YES completion:nil];
+                                 
+                                 // SHOW THE SEARCH RESULTS IN THE NEXT VIEW CONTROLLER
+                             }
+                         }];
+                    }
+                }];
             }
         }
     }
@@ -187,11 +263,7 @@
 
 #pragma mark Custom Methods
 
--(void)placeGetRequest:(NSString *)requestString action:(NSString*)action withHandler:(void (^)(NSData *data, NSURLResponse *response, NSError *error))ourBlock {
-    NSURL *url = [NSURL URLWithString:requestString];
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
-    [request setHTTPMethod:action];
-    
+-(void)placeRequest:(NSMutableURLRequest *)request withHandler:(void (^)(NSData *data, NSURLResponse *response, NSError *error))ourBlock {
     [[[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:ourBlock] resume];
 }
 

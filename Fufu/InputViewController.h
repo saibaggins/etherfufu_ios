@@ -20,6 +20,6 @@
 - (IBAction)SubmitButton_Click:(id)sender;
 - (IBAction)inputOptionButton_Click:(id)sender;
 
--(void)placeGetRequest:(NSString *)requestString action:(NSString*)action withHandler:(void (^)(NSData *data, NSURLResponse *response, NSError *error))ourBlock;
+-(void)placeRequest:(NSMutableURLRequest *)request withHandler:(void (^)(NSData *data, NSURLResponse *response, NSError *error))ourBlock;
 
 @end
